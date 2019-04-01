@@ -29,6 +29,8 @@
           >
           <textarea class="text-input message-input" placeholder="Enter Message" v-model="message"></textarea>
         </div>
+        <p class="response">{{response}}</p>
+
         <button type="submit" class="btn-dark" @click.prevent="onSubmit">Submit</button>
       </form>
     </div>
@@ -36,6 +38,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data() {
     return {
@@ -43,7 +46,8 @@ export default {
       phone: "",
       name: "",
       subject: "",
-      message: ""
+      message: "",
+      response: ""
     };
   },
   methods: {
@@ -51,30 +55,40 @@ export default {
       if (!this.email || !this.message || !this.name || !this.subject) {
         return;
       }
-
-      // const msg = {
-      //   to: "alan@maldonado.com",
-      //   from: this.email,
-      //   subject: `[maldonado.dev] ${this.subject}`,
-      //   text: `
-      //     ${this.message}
-
-      //     By ${this.name},
-      //     ${this.phone}
-      //     ${this.email}
-      //   `,
-      //   html: `
-      //     <div>
-      //       ${this.message}
-
-      //       <strong>
-      //         ${this.name}, ${this.phone}, ${this.email}
-      //       </strong>
-      //     </div>
-      //   `
-      // };
+      axios
+        .post(
+          "https://t2uil6smp8.execute-api.us-east-1.amazonaws.com/production/message-me",
+          {
+            email: this.email,
+            message: this.message,
+            name: this.name,
+            phone: this.phone,
+            subject: this.subject
+          }
+        )
+        .then(() => {
+          this.response = "Thanks for contacting me";
+          this.email = "";
+          this.phone = "";
+          this.name = "";
+          this.subject = "";
+          this.message = "";
+          this.response = "";
+        })
+        .catch(() => {
+          this.response =
+            "Looks like there is an issue while submitting the form. Please send me an email at alan@maldonado.dev";
+        });
     }
   }
 };
 </script>
+
+<style scoped>
+.response {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+</style>
 
