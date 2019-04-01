@@ -1,0 +1,116 @@
+// Tablets & Smaller
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #main-nav-wrapper {
+    border-bottom: none;
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background: none;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-home:before {
+      display: none;
+    }
+
+    &-inner {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+    }
+  }
+
+  // Home
+
+  // About
+
+  // Contact
+  #contact {
+    &-form {
+      .text-fields {
+        grid-template-areas:
+          'name'
+          'email'
+          'subject'
+          'phone'
+          'message';
+      }
+    }
+
+    &-info {
+      .contact-info {
+        div {
+          margin-bottom: 1rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px #555 solid;
+
+          &:last-child {
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &-tagline {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+}
+
+// Landscape
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+    }
+  }
+}
+@media (max-height: 330px) {
+  #header-home {
+    .header-content {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
