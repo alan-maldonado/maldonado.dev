@@ -48,38 +48,31 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log(
-        this.email,
-        this.phone,
-        this.name,
-        this.subject,
-        this.message
-      );
       if (!this.email || !this.message || !this.name || !this.subject) {
         return;
       }
 
-      const msg = {
-        to: "alan@maldonado.com",
-        from: this.email,
-        subject: `[maldonado.dev] ${this.subject}`,
-        text: `
-          ${this.message}
+      // const msg = {
+      //   to: "alan@maldonado.com",
+      //   from: this.email,
+      //   subject: `[maldonado.dev] ${this.subject}`,
+      //   text: `
+      //     ${this.message}
 
-          By ${this.name},
-          ${this.phone}
-          ${this.email}
-        `,
-        html: `
-          <div>
-            ${this.message}
+      //     By ${this.name},
+      //     ${this.phone}
+      //     ${this.email}
+      //   `,
+      //   html: `
+      //     <div>
+      //       ${this.message}
 
-            <strong>
-              ${this.name}, ${this.phone}, ${this.email}
-            </strong>
-          </div>
-        `
-      };
+      //       <strong>
+      //         ${this.name}, ${this.phone}, ${this.email}
+      //       </strong>
+      //     </div>
+      //   `
+      // };
     }
   }
 };
