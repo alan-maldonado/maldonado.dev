@@ -25,8 +25,8 @@ export default {
           href: "https://twitter.com/alan_maldonado"
         },
         {
-          type: "instagram",
-          href: "https://www.instagram.com/_alan.maldonado_/"
+          type: "github",
+          href: "https://www.github.com/alan-maldonado/"
         },
         {
           type: "linkedin",

@@ -1,7 +1,7 @@
 <template>
   <div class="header-content">
     <h1>
-      I Am Alan The
+      I am Alan The
       <span class="txt-type" ref="writer"></span>
     </h1>
     <p class="lead">{{ lead }}</p>
