@@ -13,16 +13,15 @@
         </ul>
       </div>
     </nav>
-
-    <header-content/>
+    <header-secondary/>
   </header>
 </template>
 
 <script>
-import HeaderContent from "./HeaderContent";
+import HeaderSecondary from "./HeaderSecondary";
 export default {
   components: {
-    HeaderContent
+    HeaderSecondary
   },
   data() {
     return {
