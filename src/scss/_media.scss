@@ -45,6 +45,12 @@
     }
   }
 
+  // Stack Grid Columns
+  #contact-info .contact-info,
+  .items {
+    grid-template-columns: 1fr;
+  }
+
   // Home
 
   // About
