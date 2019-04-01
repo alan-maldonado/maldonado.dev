@@ -1,0 +1,274 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: #333;
+  background-color: #42b983;
+}
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #2c3e50;
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: #42b983;
+}
+
+.bg-main {
+  background: #42b983;
+  color: #fff;
+}
+
+.bg-dark {
+  background: #2c3e50;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000;
+}
+
+.bg-medium {
+  background: #ccc;
+  color: #000;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #42b983;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #2c3e50;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+#main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-nav li {
+  padding: 1rem 1.5rem;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+}
+
+#main-nav a:hover {
+  border-color: #ccc;
+}
+
+#main-nav a.current {
+  border-color: #42b983;
+}
+
+#main-nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  border-bottom: none;
+  text-transform: none;
+}
+
+#main-nav .logo img {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+}
+
+#main-nav .logo span {
+  font-size: 1.5rem;
+  font-family: 'Dosis', sans-serif;
+}
+
+#main-nav-wrapper {
+  background: #2c3e50;
+  border-bottom: 3px solid #42b983;
+}
+
+#header-home {
+  height: 100vh;
+  color: #fff;
+  position: relative;
+  background: rgba(42, 185, 83, 0.75);
+}
+
+#header-home .header-content {
+  text-align: center;
+  padding-top: 20%;
+}
+
+#header-home .header-content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+#header-home::before {
+  content: '';
+  position: absolute;
+  background: url("/images/bg-image-min.jpg") no-repeat center right/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#main-footer {
+  background: #2c3e50;
+  color: #fff;
+  height: 5rem;
+}
+
+#main-footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 2px #fff solid;
+  color: #fff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#main-footer .footer-content .social .fab:hover {
+  background: #42b983;
+}
+/*# sourceMappingURL=main.css.map */

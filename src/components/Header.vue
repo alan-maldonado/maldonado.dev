@@ -1,5 +1,5 @@
 <template>
-  <header id="header-home">
+  <header :id="headerId">
     <nav id="main-nav-wrapper">
       <div id="main-nav" class="container">
         <a class="logo" href="/">
@@ -8,12 +8,12 @@
         </a>
         <ul>
           <li v-for="item in menu" :key="item.title">
-            <a :href="item.href" :class="{current: item.active}">{{item.title}}</a>
+            <router-link :to="item.to" :class="{current: isActive(item.title)}">{{item.title}}</router-link>
           </li>
         </ul>
       </div>
     </nav>
-    <header-secondary/>
+    <header-secondary v-if="showSecondary"/>
   </header>
 </template>
 
@@ -26,12 +26,25 @@ export default {
   data() {
     return {
       menu: [
-        { title: "Home", href: "/", active: true }
-        // { title: "About", href: "/", active: false },
-        // { title: "Work", href: "/", active: false },
-        // { title: "Contact", href: "/", active: false }
+        { title: "Home", to: "/" },
+        // { title: "About", to: "/about" },
+        // { title: "Work", href: "/" },
+        { title: "Contact", to: "/contact" }
       ]
     };
+  },
+  computed: {
+    showSecondary() {
+      return this.$route.name === "Home";
+    },
+    headerId() {
+      return this.$route.name === "Home" ? "header-home" : "header-inner";
+    }
+  },
+  methods: {
+    isActive(title) {
+      return title === this.$route.name;
+    }
   }
 };
 </script>
