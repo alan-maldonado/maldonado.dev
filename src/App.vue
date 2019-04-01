@@ -1,31 +1,20 @@
 <template>
   <div id="app">
+    <Header/>
     <Home/>
   </div>
 </template>
 
 <script>
+import Header from "./components/Header";
 import Home from "./components/Home";
 
 export default {
   name: "app",
   components: {
-    Home
+    Home,
+    Header
   }
 };
 </script>
 
-<style>
-#app {
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-body {
-  background: #2c3e50;
-}
-</style>

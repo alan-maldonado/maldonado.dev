@@ -1,0 +1,55 @@
+// Main Nav
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+
+  // Logo
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: none;
+    text-transform: none;
+  }
+
+  .logo img {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+  }
+
+  .logo span {
+    font-size: 1.5rem;
+    font-family: 'Dosis', sans-serif;
+  }
+}
+
+#main-nav-wrapper {
+  background: $dark-color;
+  border-bottom: 3px solid $main-color;
+}
