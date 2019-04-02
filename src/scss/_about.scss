@@ -32,12 +32,21 @@
 
     .award-1 {
       grid-area: aw1;
+      h3 {
+        color: darken($main-color, 20%);
+      }
     }
     .award-2 {
       grid-area: aw2;
+      h3 {
+        color: darken($main-color, 20%);
+      }
     }
     .award-3 {
       grid-area: aw3;
+      h3 {
+        color: darken($main-color, 20%);
+      }
     }
 
     .award-1 .fas,
@@ -45,6 +54,12 @@
     .award-3 .fas {
       color: $main-color;
       margin: 1rem;
+    }
+
+    .award-1 .fas:hover,
+    .award-2 .fas:hover,
+    .award-3 .fas:hover {
+      color: darken($main-color, 20%);
     }
   }
 
