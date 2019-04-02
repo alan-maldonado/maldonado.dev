@@ -27,7 +27,7 @@ export default {
     return {
       menu: [
         { title: "Home", to: "/" },
-        // { title: "About", to: "/about" },
+        { title: "About", to: "/about" },
         // { title: "Work", href: "/" },
         { title: "Contact", to: "/contact" }
       ]

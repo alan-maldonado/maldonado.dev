@@ -7,6 +7,13 @@
       padding-top: 5rem;
     }
   }
+
+  // Stack Grid Columns
+  #about-tech .areas,
+  #about-logos .about-logos,
+  .items {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Smartphones
@@ -46,7 +53,10 @@
   }
 
   // Stack Grid Columns
+  #about-tech .areas,
+  #about-logos .about-logos,
   #contact-info .contact-info,
+  #about-logos .about-logos,
   .items {
     grid-template-columns: 1fr;
   }
