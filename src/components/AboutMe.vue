@@ -58,7 +58,7 @@
           >
             <h3>AWS Developer Certification</h3>
           </a>
-          <p>I got AWS Certified Developer - Associate in Octuber 2010.</p>
+          <p>I got AWS Certified Developer - Associate in Octuber 2018.</p>
         </div>
       </div>
     </div>
