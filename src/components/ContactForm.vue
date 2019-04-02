@@ -73,7 +73,6 @@ export default {
           this.name = "";
           this.subject = "";
           this.message = "";
-          this.response = "";
         })
         .catch(() => {
           this.response =
@@ -87,7 +86,7 @@ export default {
 <style scoped>
 .response {
   font-size: 2rem;
-  color: #333;
+  color: #42b983;
   margin-bottom: 1rem;
 }
 </style>
