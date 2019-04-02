@@ -64,6 +64,22 @@
   // Home
 
   // About
+  #about {
+    &-me {
+      .about-info {
+        grid-template-areas:
+          'bioimage'
+          'bio'
+          'aw1'
+          'aw2'
+          'aw3';
+      }
+    }
+
+    &-logos {
+      display: none;
+    }
+  }
 
   // Contact
   #contact {
