@@ -5,7 +5,7 @@
       <div class="bottom-line"></div>
       <div class="about-logos">
         <img src="../assets/about-logos/logo-fox-news.png" alt>
-        <img src="../assets/about-logos/logo-fox-business.svg" alt>
+        <img src="../assets/about-logos/logo-fox-business.png" alt>
         <img src="../assets/about-logos/logo-newscorp.svg" alt>
         <img src="../assets/about-logos/logo-wsj.svg" alt>
         <img src="../assets/about-logos/logo-marketwatch.svg" alt>
