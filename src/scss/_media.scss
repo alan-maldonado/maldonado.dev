@@ -14,6 +14,13 @@
   .items {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  #home-specialize .home-languages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #home-languages .home-languages {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 // Smartphones
@@ -61,8 +68,12 @@
     grid-template-columns: 1fr;
   }
 
-  #home-languages .home-languages {
+  #home-specialize .home-languages {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #home-languages .home-languages {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   // Home

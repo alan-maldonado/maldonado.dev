@@ -1,13 +1,18 @@
 <template>
-  <home-languages/>
+  <section>
+    <home-specialize/>
+    <home-languages/>
+  </section>
 </template>
 
 <script>
 import HomeLanguages from "../components/HomeLanguages";
+import HomeSpecialize from "../components/HomeSpecialize";
 export default {
   name: "Home",
   components: {
-    HomeLanguages
+    HomeLanguages,
+    HomeSpecialize
   }
 };
 </script>
