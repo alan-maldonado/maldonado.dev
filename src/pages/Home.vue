@@ -1,10 +1,14 @@
 <template>
-  <div class="bg-main"></div>
+  <home-languages/>
 </template>
 
 <script>
+import HomeLanguages from "../components/HomeLanguages";
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    HomeLanguages
+  }
 };
 </script>
 
