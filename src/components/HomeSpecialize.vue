@@ -1,5 +1,5 @@
 <template>
-  <section id="home-specialize" class="py-3 bg-medium">
+  <section id="home-specialize" class="py-3 bg-light">
     <div class="container">
       <h2 class="section-title">I Specialize In</h2>
       <div class="bottom-line"></div>

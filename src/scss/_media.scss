@@ -63,7 +63,6 @@
   #about-tech .areas,
   #about-logos .about-logos,
   #contact-info .contact-info,
-  #about-logos .about-logos,
   .items {
     grid-template-columns: 1fr;
   }
@@ -77,6 +76,9 @@
   }
 
   // Home
+  #welcome-mobile {
+    display: block;
+  }
 
   // About
   #about {
@@ -92,7 +94,11 @@
     }
 
     &-logos {
-      display: none;
+      display: block;
+
+      .about-logos {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 

@@ -5,6 +5,7 @@ $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #2c3e50;
 $bg-image: url('/images/bg-image-min.jpg');
+$bg-image-mobile: url('/images/bg-image-mobile.png');
 
 // Set Text Color
 @function set-text-color($color) {
