@@ -11,7 +11,7 @@
           <p class="name">
             My Name is
             <strong>Alan Maldonado</strong>. Currently, I am a Sr. Software Engineer at
-            <em>Wizeline</em>.
+            <em>Scalable Press</em>.
           </p>
           <hr>
           <p>I am a Software Engineer graduated from Tec de Monterrey in 2009. I got a scholarship, and with my parents help we could afford it.</p>
@@ -20,6 +20,8 @@
           <p>I stayed in Nubeware for around 3 years working with the same technology .NET. In that company, I gain more experience as a .NET developer and have a good relationship with technical customers.</p>
           <p>After then, I joined Neoris, well-formed tech company, they have offices around the world and big clients. Here, I worked directly with technical and non-technical customers. I did analysis & design, then the implementation of the requirements of many projects.</p>
           <p>In 2015, I joined Wizeline in Guadalajara, At that moment the company had around 100 employees. Nowadays more than 500. It is a good challenge to be in a company that grows so fast, at the same time very exciting. I started as a Software Engineer, doing many projects in Javascript, Nodejs, python. Also, I work along with some Data Science colleagues. Now, I got promoted to Sr Software Engineer due to my skills and abilities to improve customer relationships. I focused in to create a healthy team environment, so together we can get achieve any goal and succeed expectations.</p>
+          <p>Then, after 3 years, I decided to move to an smaller company, Scalable Press, 20+ software enginers in GDL, because I wanted to prove myself that I can have a bigger impact, and help the company to succeed.</p>
+
         </div>
         <div class="award-1">
           <a href="https://www.linkedin.com/in/alanmaldonado/" target="_blank">
